@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Noteworthy Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Noteworthy Light'), url('Noteworthy-Lt.woff') format('woff');
+}
+
+body {
+    background-image: url("carolina jumprope.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+/* header {
+    background-color: rgba(152, 186, 221, 0.8);
+    width: 100vw;
+    text-align: center;
+} */
+
+nav {
+    background-color: rgba(152, 186, 221, 0.8);
+    width: 100vw;
+    list-style: none;
+    font-family: 'Noteworthy Light';
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+img {
+    z-index: 5;
+}
+
+.nav-item {
+    padding-left: 15px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+}
