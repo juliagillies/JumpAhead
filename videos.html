@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jump Ahead</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css">
+    <link href='otherfiles.css' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <header class="header">
+            <!-- <h1>Jump Ahead</h1> -->
+            <nav class="navbar navbar-fixed-top navbar-expand-sm d-flex justify-content-center">
+                
+                    <a class="nav-link navbar-brand p-2" href="#">
+                        <img src="imageedit_37_2866706753.png" width="150" class="d-inline-block align-top" alt="">
+                    </a>
+
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                         <li class="nav-item p-2">
+                            <a class="nav-link" href="videos.html">Food &amp; Exercise Videos</a>
+                        </li>
+                         <li class="nav-item p-2">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                         <li class="nav-item p-2">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          </nav>
+        </header>
+        
+        
+        <div class="row inputrow">
+            <input type="text" id="input" onkeyup="search()" placeholder="Search.." title="Search bar">
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            
+            <div class="col-sm-6">
+            
+            <ul id="vid-ul">
+                <li><a>Jump Ahead Intro</a><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/88GX5jg0YEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li><a>Snack: Ants on a Log</a><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dpq7kEdfCtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li><a>Snack: Kabobs</a><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hVEKYvvKq4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+
+                <li><a>Snack: Northside Fruit Platter</a><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9VTTjw2-PgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                
+            </ul>
+                
+            </div>
+            
+            <div class="col-sm-3"></div>
+            
+            <script>
+                function search() {
+                    var input = document.getElementById("input");
+                    var filter = input.value.toUpperCase();
+                    var ul = document.getElementById("vid-ul");
+                    var li = ul.getElementsByTagName("li");
+                    var a, i, txtValue;
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+            
+        </div>
+        
+    </div>
+    
+
+
+</body>
+
+</html>
