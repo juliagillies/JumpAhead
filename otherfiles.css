@@ -24,6 +24,25 @@ body {
     font-family: 'Permanent Marker', cursive;
     color: #4464ad;
 }
+
+.dropdown-toggle {
+    font-family: 'Noteworthy Light';
+    font-size: 90%;
+    margin: 10px;
+    width: 160px;
+    background-color: #4464ad;
+    border: none;
+    border-radius: 7px;
+}
+
+.dropdown-toggle:hover {
+    background-color: rgba(152, 186, 221, 0.7);
+}
+
+.fa-search {
+    margin-left: 20px;
+}
+
 input[type=text] {
   width: 150px;
   -webkit-transition: width 0.4s ease-in-out;
@@ -38,7 +57,9 @@ input[type=text]:focus {
 
 input {
     margin: 10px;
-    margin-left: 30px;
+    font-family: 'Noteworthy Light';
+    border-style: groove;
+    border-radius: 5px;
 }
 
 #vid-ul li {
