@@ -14,7 +14,7 @@ body {
 .container, .row {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .col-sm-6 h2 {
@@ -24,19 +24,35 @@ body {
     font-family: 'Permanent Marker', cursive;
     color: #4464ad;
 }
+input[type=text] {
+  width: 150px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+input[type=text]:focus {
+  width: 95vw;
+}
 
 input {
-    width: 100%;
     margin: 10px;
+    margin-left: 30px;
 }
 
 #vid-ul li {
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: -40px;
 }
 
 p, a {
     font-family: 'Noteworthy Light';
     font-size: 105%;
+}
+
+.video-title {
+    font-variant: small-caps;
 }
 
 ul {
