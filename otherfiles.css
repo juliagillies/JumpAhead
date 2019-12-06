@@ -17,6 +17,15 @@ body {
     width: 100vw;
 }
 
+.navbar-dark .navbar-nav .nav-link  {
+     color: white; 
+}
+
+.navbar-dark .navbar-toggler {
+    color: white; 
+    border-color: white;
+}
+
 .section-header {
     padding-top: 25px;
     padding-bottom: 25px;
