@@ -116,6 +116,38 @@ img {
     padding: 5px;
 }
 
+form {
+    line-height: 50%;
+}
+
+#emailInput {
+    width: 100%;
+}
+
+#messageInput {
+    width: 100%;
+    margin-left: 10px;
+    font-family: 'Noteworthy Light';
+}
+
+label {
+    font-family: 'Noteworthy Light';
+}
+
+.submit-btn {
+    margin-bottom: 25px;
+    width: 30%;
+    background-color: #4464ad;
+    font-family: 'Permanent Marker';
+    font-variant: small-caps;
+    margin-left: 35%;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: rgba(152, 186, 221, 0.8);
+}
+
 #about {
     background-color: white;
 }
