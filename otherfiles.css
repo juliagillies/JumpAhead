@@ -151,3 +151,136 @@ label {
 #about {
     background-color: white;
 }
+
+h3 {
+    font-weight: bold;
+    font-family: 'Noteworthy';
+    font-size: 20px;
+}
+
+.events-close {
+    font-size: 20px;
+     font-weight: bold;
+    font-family: 'Noteworthy';
+}
+
+.events p{
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.stendig {
+    font-family: 'Noteworthy';
+  width: 300px;
+  margin: auto;
+  position: relative;
+  padding-top: 150px;
+  top: -44px;
+    padding-left: 15px;
+}
+
+.stendig h2 {
+  position: absolute;
+    margin-left: -120px;
+    padding-top: 115px;
+  top: 0;
+  letter-spacing: -1px;
+  font-size: 1.2em;
+}
+
+.stendig .year {
+  left: 260px;
+    color: rgba(152, 186, 221, 0.8);
+}
+
+.stendig .month {
+  left: 190px;
+    color: rgba(152, 186, 221, 0.8);
+}
+
+.stendig table {
+  width: 250px;
+  font-size: 20px;
+  border-spacing: 0;
+}
+    thead {
+    vertical-align: top;
+  }
+
+  &:hover td.today {
+    color: #7512ed;
+  
+}
+
+.stendig table td {
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-left: 1px solid #000;
+  vertical-align: top;
+  transition: color 300ms ease-in;
+  letter-spacing: 2px;
+}
+
+.k13 {
+    background-color: rgba(152, 186, 221, 0.8);
+    color: white;
+}
+  &.k3 {
+    letter-spacing: -3px;
+  }
+
+  &.k10 {
+    letter-spacing: -10px;
+  }
+
+  &.k13 {
+    letter-spacing: -13px;
+  }
+
+
+  table td {
+    border-color: #fff;
+  }
+
+
+// Responsive Styles
+@media (max-width:660px) {
+  .stendig {
+    width: 320px;
+    }
+
+    .k10 {
+      letter-spacing: -5px;
+    }
+
+    .k13 {
+      letter-spacing: -8px;
+    }
+    
+    h2 {
+      font-size: 1em;
+    }
+
+    table {
+      width: 320px;
+      font-size: 35px;
+    }
+
+    table td {
+      width: 46px;
+      height: 27px;
+      letter-spacing: -3px;
+    }
+
+    .year {
+      left: 184px;
+    }
+
+    .month {
+      left: 230px;
+    }
+
+}
