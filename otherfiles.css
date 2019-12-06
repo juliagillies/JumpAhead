@@ -17,7 +17,7 @@ body {
     width: 100vw;
 }
 
-.col-sm-6 h2 {
+.section-header {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
