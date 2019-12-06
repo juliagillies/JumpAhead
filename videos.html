@@ -17,33 +17,29 @@
 
 <body>
     
-    
-    <div class="container">
-        <header class="header">
-            <!-- <h1>Jump Ahead</h1> -->
-            <nav class="navbar navbar-fixed-top navbar-expand-sm d-flex justify-content-center">
-                
-                    <a class="nav-link navbar-brand p-2" href="#">
-                        <img src="imageedit_37_2866706753.png" width="150" class="d-inline-block align-top" alt="">
-                    </a>
+        <header class="site-header">
+            <nav class="navbar navbar-fixed-top navbar-expand-sm navbar-dark d-flex justify-content-center">
+                <li class="nav-link navbar-brand p-2">
+                    <img src="imageedit_37_2866706753.png" width="150" class="d-inline-block align-top" alt="">
+                </li>
 
-                <!-- navbar links -->
+               
                 <div class="collapse navbar-collapse justify-content-end" id="nav-content">
                     <ul class="navbar-nav">
                         <li class="nav-item p-2">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html"><span class="text-nowrap">About Us</span></a>
                         </li>
                          <li class="nav-item p-2">
-                            <a class="nav-link" href="videos.html">Food &amp; Exercise Videos</a>
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                          <li class="nav-item p-2">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                         <li class="nav-item p-2">
-                            <a class="nav-link" href="#">Contact Us</a>
+                             <a class="nav-link" href="contact.html"><span class="text-nowrap">Contact Us</span></a>
                         </li>
                     </ul>
                 </div>
@@ -59,15 +55,6 @@
         </div>
         <div class="row">
             <div class="col-sm-3">
-                <div class="dropdown open">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Available Videos
-                    </button>
-                    <div class="dropdown-menu">
-                        <span class="dropdown-item-text">Video 1</span>
-                        <span class="dropdown-item-text">Video 2</span>
-                    </div>
-                </div>
             </div>
             
             <div class="col-sm-6">
@@ -114,9 +101,12 @@
             
         </div>
         
-    </div>
     
-
+  <!-- The links below add jQuery first, then Popper.js, then Bootstrap JavaScript to your project. Without them, the animated and interactive features in the Bootstrap 4 CSS will not work. They MUST appear in this order to ensure that jQuery loads before the Bootstrap JS. We add them at the bottom of the body element so they won't be loaded until they're needed, which helps with your site's speed and functionality. -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
 
 </body>
 
